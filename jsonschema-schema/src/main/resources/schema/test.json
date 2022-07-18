@@ -1,0 +1,47 @@
+{
+  "title": "Consumer Created Event",
+  "description": "Event is emitted when a consumer is created",
+  "type":"object",
+  "properties": {
+    "applicant": {
+      "type": "object",
+      "properties": {
+        "applicantId": {
+          "type": "string"
+        },
+        "person": {
+          "type": "object",
+          "properties": {
+            "personName": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "type": "string"
+                },
+                "lastName": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "contactPoint": {
+          "type": "object",
+          "properties": {
+            "postalAddresses": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "addressId": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
